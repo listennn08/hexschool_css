@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  font-family: 'Noto Sans TC', sans serif;
+}
+
+.header, .container, .footer-inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 80px;
+  border-bottom: 2px solid #000;
+  margin: 67px 0 48px;
+  padding: 17px;
+}
+
+.img {
+  margin-bottom: 48px;
+}
+
+.subtitle {
+  font-size: 32px;
+  line-height: 43px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #000;
+  padding: 8px 0;
+}
+
+.en {
+  font-size: 24px;
+  line-height: 28px;
+  color: #aa0000;
+  text-transform: uppercase;
+}
+
+.profile, .education, .skill, .experience {
+  margin-bottom: 72px;
+}
+
+.profile p {
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.education ul li {
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.skill, .footer {
+  background-color: #415165;
+}
+
+.skill-inner, .footer-inner {
+  padding: 24px;
+}
+
+.skill-inner .subtitle, .skill-inner .en, .skill-inner li, .skill-inner a, .footer-inner .subtitle, .footer-inner .en, .footer-inner li, .footer-inner a {
+  color: #fff;
+}
+
+.skill-inner .subtitle, .footer-inner .subtitle {
+  text-align: center;
+  border-bottom: 1px solid #fff;
+}
+
+.skill-inner ul li, .footer-inner ul li {
+  margin: 0 auto;
+  font-size: 24px;
+}
+
+.skill-inner {
+  width: 996px;
+}
+
+.skill-inner .subtitle {
+  margin-bottom: 40px;
+  line-height: 45px;
+}
+
+.skill-inner ul li {
+  width: 212px;
+  border-left: 1px solid #96A9C4;
+  padding: 10px 0 10px 24px;
+}
+
+.experience ul {
+  padding-left: 24px;
+}
+
+.experience ul li {
+  border-left: 1px solid #96A9C4;
+  padding: 12px 24px;
+}
+
+.experience ul li .list-title {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.experience ul li p {
+  width: 642px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.experience ul li img {
+  vertical-align: middle;
+  margin: 8px 0px;
+}
+
+.footer {
+  width: 100%;
+}
+
+.footer-inner .subtitle {
+  margin-bottom: 16px;
+}
+
+.footer-inner ul {
+  text-align: center;
+}
+
+.footer-inner ul li {
+  margin-bottom: 16px;
+}
+
+.footer-inner ul li a {
+  text-decoration: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.footer-inner ul li a:hover {
+  color: #ddd;
+  text-decoration: underline;
+}
+
+.footer-inner .footer-img {
+  width: 204px;
+  margin: 0 auto 36px;
+}
+
+.footer-inner .footer-img ul li {
+  display: inline;
+}
+
+.footer-inner .footer-img ul li:not(:last-of-type) {
+  margin-right: 24px;
+}
+
+.footer-inner .footer-img ul li img {
+  width: 48px;
+}
+/*# sourceMappingURL=main.css.map */
