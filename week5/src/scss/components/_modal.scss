@@ -1,0 +1,98 @@
+.modal {
+  &.fade {
+    .modal-dialog {
+      transform: translateY(0);
+      opacity: 0;
+    }
+  }
+
+  &.show {
+    .modal-dialog {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+
+.modal__view {
+  padding: 16px;
+  display: flex;
+
+  &__img {
+    width: 160px;
+  }
+
+  &__content {
+    width: 60%;
+
+    .highlight {
+      font-family: 'Lato';
+      padding: 4px 8px;
+      margin: 0;
+      color: $gray-800;
+    }
+  }
+
+  &__control {
+    display: flex;
+    max-height: 100%;
+    height: auto;
+    transition: height .2s;
+
+    .btn {
+      transform: translateY(0);
+      opacity: 1;
+      transition: .2s;
+    }
+
+    &.hide {
+      max-height: 0;
+      height: 0;
+
+      .btn {
+        transform: translateY(-10%);
+        opacity: 0;
+        z-index: -2;
+      }
+    }
+  }
+}
+
+.modal__admin {
+  &__title {
+    margin-bottom: 32px;
+  }
+
+  &__content {
+    border-bottom: 1px solid $border-color;
+    margin-bottom: 1.5rem;
+  }
+  .form-group {
+    label {
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+.control__collapse__btn {
+  transform: rotate(0);
+  transition: transform .2s;
+
+  &.show {
+    transform: rotate(180deg);
+  }
+}
+
+.input {
+  border: 1px solid $gray-800;
+  border-radius: 2px;
+  width: 100%;
+}
+
+.selector {
+  border: 1px solid $border-color;
+  border-radius: 2px;
+  cursor: pointer;
+}

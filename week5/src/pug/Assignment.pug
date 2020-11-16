@@ -1,0 +1,131 @@
+include components/Topbar
+
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Week5
+    link(rel="stylesheet", href="./css/index.css")
+  body
+    .wrap
+      include components/Sidebar
+      main.container-fluid
+        +topbar('Assignment')
+        section.assignment
+          .dropdown
+            a#assignment__list__btn.toggle__btn(href="#")
+              span.dropdown__item__text All (4)
+              span.dropdown__item__icon: i.material-icons keyboard_arrow_down
+            #assignment__list.dropdown__menu
+              .dropdown__menu__item.active
+                .dropdown__menu__item__tag
+                  .dropdown__menu__item__tag__assignment Chapter Assignment 2
+                  .dropdown__menu__item__tag__time 4 hrs ago
+                .dropdown__menu__item__info
+                  .dropdown__menu__item__info__title Please check this file…
+                  .text-secondary.dropdown__menu__item__info__name Emily Wang
+              .dropdown__menu__item
+                .dropdown__menu__item__tag
+                  .dropdown__menu__item__tag__assignment Chapter Assignment 1
+                  .dropdown__menu__item__tag__time 12 hrs ago
+                .dropdown__menu__item__info
+                  .dropdown__menu__item__info__title My Homework
+                  .text-secondary.dropdown__menu__item__info__name David Xu
+              .dropdown__menu__item
+                .dropdown__menu__item__tag
+                  .dropdown__menu__item__tag__assignment Final Assignment
+                  .dropdown__menu__item__tag__time 18 hrs ago
+                .dropdown__menu__item__info
+                  .dropdown__menu__item__info__title Have a problem with this…
+                  .text-secondary.dropdown__menu__item__info__name Tony Wei
+              .dropdown__menu__item
+                .dropdown__menu__item__tag
+                  .dropdown__menu__item__tag__assignment Final Assignment
+                  .dropdown__menu__item__tag__time 19 hrs ago
+                .dropdown__menu__item__info
+                  .dropdown__menu__item__info__title Did I do it right?
+                  .text-secondary.dropdown__menu__item__info__name Christina Lin
+          .assignment__main
+            .comment__count 2 comments
+            .assignment__main__card
+              .bg-light.assignment__main__card__title
+                .assignment__main__card__title__info
+                  .assignment__main__card__title__info__tag Chapter Assignment 2 / HTML&CSS
+                  .assignment__main__card__title__info__subject Please check this file for me, thanks!
+                a.ml-auto.text-dark.more__btn(href="#")
+                  i.material-icons more_vert
+              .assignment__main__list
+                .assignment__main__list__card
+                  .assignment__main__list__card__title
+                    .user__img
+                      img.rounded-circle(src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/emilywang.jpeg?raw=true")
+                    .ml-2.assignment__main__list__card__title
+                      .assignment__main__list__card__title__info
+                        .font-weight-bold.assignment__main__list__card__title__info__name Emily Wang
+                        .text-secondary.assignment__main__list__card__title__info__time 10:38 AM (4 hours ago)
+                  .assignment__main__list__card__body
+                    .assignment__main__list__card__body__content Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the 
+                      span.highlight div
+                      |  is bigger than the height of the 
+                      span.highlight img
+                      | ? There is a gap below the image, but it doesn’t seems to be a padding/margin. What is the gap or extra space below image?
+                    .assignment__main__list__card__body__attachments
+                      .assignment__main__list__card__body__attachments__item
+                        i.material-icons attach_file
+                        span.font-weight-bold.assignment__main__card__list__item__body__attachments__item__filename HW-2-David.zip
+                .assignment__main__list__card
+                  .assignment__main__list__card__title
+                    .user__img
+                      img.rounded-circle(src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/andychen.jpeg?raw=true")
+                    .ml-2.assignment__main__list__card__title__info
+                      .font-weight-bold.assignment__main__list__card__title__info__name Andy Chen (You)
+                      .text-secondary.assignment__main__list__card__title__info__time 13:24 AM (1 hours ago)
+                    .ml-auto.assignment__main__list__card__title__control
+                      a.text-dark.assignment__main__list__card__title__control__btn(href="#"): i.material-icons star_border
+                      a.text-dark.assignment__main__list__card__title__control__btn(href="#"): i.material-icons edit
+                  .assignment__main__list__card__body
+                    .assignment__main__list__card__body__content Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.
+                      br
+                      | You can:
+                      br
+                      ul
+                        li • adjust the 
+                          span.highlight vertical-align
+                          | of the image to position it elsewhere (e.g. the 
+                          span.highlight middle
+                          | )
+                        li • change the 
+                          span.highlight display
+                          |  so it isn’t inline.
+                #richtext.richtext
+                  .bg-light.richtext__control
+                    a.richtext__control__btn(href="#")
+                      span.font-weight-bold Body text
+                      i.material-icons arrow_drop_down
+                    a.richtext__control__btn(href="#")
+                      i.material-icons format_bold
+                    a.richtext__control__btn(href="#")
+                      i.material-icons format_italic
+                    a.richtext__control__btn(href="#")
+                      i.material-icons format_list_bulleted
+                    a.richtext__control__btn(href="#")
+                      i.material-icons format_list_numbered
+                    a.richtext__control__btn(href="#")
+                      i.material-icons insert_photo
+                    a.richtext__control__btn(href="#")
+                      i.material-icons insert_link
+                    a.richtext__control__btn(href="#")
+                      i.material-icons code
+                  textarea.richtext__input(rows="7" placeholder="Reply an answer…")
+                  .d-flex.justify-content-end.richtext__btn
+                    button#richtext__cancel.btn.btn-outline-primary Cancel
+                    button.ml-2.btn.btn-primary Reply
+                
+            .mt-2.d-flex.align-items-center.justify-content-between.assignment__main__control
+              a.text-dark(href="#"): i.material-icons navigate_before
+              a.ml-2.text-dark(href="#"): i.material-icons navigate_next
+              button.ml-auto.btn.btn-outline-primary Mark as read
+              button#reply.ml-2.btn.btn-primary Reply
+    script(src="./js/index.bundle.js")

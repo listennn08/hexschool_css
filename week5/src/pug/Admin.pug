@@ -1,0 +1,41 @@
+include components/Topbar
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Week5
+    link(rel="stylesheet", href="./css/index.css")
+  body
+    .wrap
+      include components/Sidebar
+      main.container-fluid
+        +topbar('Admin')
+        secion.admin
+          table#admin__table.table-borderless.w-100.admin__table
+            thead
+              th
+                a.sort__btn(href="#")
+                  span ID
+                  spn.material-icons arrow_downward
+              th Name
+              th Email
+              th Verified
+              th
+            tbody
+          .d-flex.justify-content-end
+            include components/Pagination
+    #myModal.modal.fade(tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true")
+      .modal-dialog-centered.modal-dialog(role="document")
+        .modal-content
+          .modal-header
+            h5.modal-title Modal title
+            button.close(type="button" data-dismiss="modal" aria-label="Close")
+              span(aria-hidden="true") &times;
+          .modal-body
+            p Modal body text goes here.
+          .modal-footer
+            button(type="button" class="btn btn-primary") Save changes
+            button(type="button" class="btn btn-secondary" data-dismiss="modal") Close
+    script(src="./js/index.bundle.js")

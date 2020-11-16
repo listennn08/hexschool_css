@@ -1,0 +1,56 @@
+.admin {
+  height: 86%;
+  padding: 0 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__table {
+    width: inherit;
+    thead {
+      width: 100%;
+      border-bottom: 1px solid $gray-800;
+      th {
+
+        a {
+          display: flex;
+          align-items: center;
+          color: $gray-800;
+        }
+        .material-icons {
+          font-size: 16px;
+          color: $primary;
+
+          &.rotate {
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+    tbody {
+      tr {
+        border-bottom: 1px solid $border-color;
+        
+        &:hover {
+          background-color: $light;
+        }
+
+        td {
+          padding: 1rem 0 1rem;
+          vertical-align: middle;
+          a {
+            color: $gray-800;
+
+            &:hover {
+              color: $primary
+            }
+          }
+          .material-icons {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
+}
+

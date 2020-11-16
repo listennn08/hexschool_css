@@ -1,0 +1,176 @@
+.assignment {
+  height: 86%;
+  padding: 0 32px;
+  display: flex;
+  justify-content: space-between;
+
+  &__main {
+    width: 62%;
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    &__card {
+      @include Base__card__border;
+      width: 100%;
+      position: relative;
+
+      &__title, &__list {
+        padding: 12px 16px;
+      }
+
+      &__title {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid $border-color;
+
+        &__info {
+
+          &__tag {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    &__list {
+
+      &__card {
+        display: flex;
+        padding: 16px 32px 0 16px;
+        flex-direction: column;
+
+        &__title {
+          display: flex;
+
+          &__info {
+            &__time {
+              font-size: 12px;
+            }
+          }
+          &__control {
+            display: flex;
+            align-items: flex-start;
+
+            &__btn {
+              display: block;
+              margin-left: 24px;
+            }
+          }
+        }
+        &__body {
+          margin-left: 3rem;
+          width: 90%;
+          &:not(:last-of-type) {
+            margin-bottom: 16px;
+          }
+          
+          
+          &__content {
+            font-size: 14px;
+            padding: 16px 0;
+          }
+
+          &__attachments {
+            display: flex;
+
+            &__item {
+              @include Base__card__border;
+              background-color: $light;
+              padding: 8px 12px;
+              margin-bottom: 16px;
+              display: flex;
+              align-items: center;
+              cursor: pointer;
+
+              &:hover {
+                background-color: darken($light, 20%) !important;
+              }
+            }
+
+          }
+
+          ul {
+            padding: 10px 20px;
+          }
+        }
+
+        &:not(:last-of-type) {
+          .assignment__main__list__card__body {
+            border-bottom: 1px solid$border-color;
+          }
+        }
+      }
+    }
+
+    &__control {
+      width: 100%;
+    }
+  }
+}
+
+.toggle__btn {
+  display: flex;
+
+  .dropdown__item__icon {
+    transition: transform .2s;
+
+    &.close {
+    transform: rotate(90deg);
+    }
+  }
+}
+.comment__count {
+  line-height: 1.9;
+}
+.more__btn {
+  display: block;
+
+  &:hover {
+    i {
+      color: $primary !important;
+    }
+  }
+}
+
+
+.richtext {
+  position: absolute;
+  top: 55%;
+  bottom: -10%;
+  right: -1px;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid $border-color;
+  transform-origin: 100% 100%;
+  transform: scale(0, 0);
+  transition: transform .2s;
+  
+  &.show {
+    transform: scale(1, 1);
+  }
+
+  &__control {
+    padding: 1.2rem .5rem 1rem;
+    display: flex;
+    border-bottom: 1px solid $border-color;
+    
+    &__btn {
+      color: $gray-800;
+      display: flex;
+      align-items: center;
+      margin: 0 12px;
+    }
+  }
+  &__input {
+    padding: 16px 24px;
+    bottom: 0;
+    resize: none;
+    border: 0;
+    outline: none;
+  }
+
+  &__btn {
+    padding: 0 24px 16px;
+  }
+}

@@ -1,0 +1,16 @@
+mixin topbar(path)
+  nav.topbar
+    h2.topbar__title=path
+    -if (path == 'Assignment')
+      #dropdown.dropdown
+        a#topbar__dropdown__btn.dropdown__item(href="#")
+          span.dropdown__item__text All Courses
+          span.dropdown__item__icon: i.material-icons keyboard_arrow_down
+        #topbar__dropdown.dropdown__menu--sm
+          div.dropdown__menu--sm__item(data-value="All Courses") All Courses
+    -else if (path == 'Admin')
+      a#addAdmin(href="#" data-action="add")
+        i.material-icons add
+        span.ml-2.link__text Add New Admin
+    i.ml-auto.material-icons search
+    i.ml-4.material-icons notifications_active

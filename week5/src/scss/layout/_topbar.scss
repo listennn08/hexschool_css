@@ -1,0 +1,17 @@
+.topbar {
+  padding: 32px;
+  display: flex;
+  align-items: center;
+
+  &__title {
+    margin-right: 46px;
+  }
+
+  .material-icons {
+    cursor: pointer;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}

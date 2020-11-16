@@ -1,0 +1,25 @@
+.highlight {
+  font-family: 'Roboto Mono';
+  background-color: $light;
+  color: $primary;
+  padding: 0 4px;
+  margin: 0 2px;
+  border: {
+    width: 0;
+    radius: 2px;
+  }
+}
+
+.small__text {
+  font-size: 14px;
+}
+
+.link__text {
+  display: inline-block;
+  color: $gray-800;
+  vertical-align: middle;
+
+  &:hover {
+    color: $primary
+  }
+}
