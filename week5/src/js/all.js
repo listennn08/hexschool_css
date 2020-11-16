@@ -2,6 +2,16 @@ import $ from 'jquery';
 import 'bootstrap';
 import '../scss/main.scss';
 
+
+$('.sidebar__list__item').each(function(){
+  const link =  $(location).attr("href");
+  if (link.includes($(this).find('span').text())) {
+    $(this).find('a').addClass('active');
+  } else {
+    $(this).find('a').removeClass('active');
+  }
+})
+
 $('#topbar__dropdown__btn').on('click', function() {
   $('#topbar__dropdown').toggleClass('show');
 });
