@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <title>Week5</title>
+    <link href="./css/index.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrap">
+<aside class="bg-light sidebar">
+  <div class="sidebar__logo"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/7059003f6d011be52053cb5e63d68f3999af01d7/week5/logo-ANSWER.svg"></div>
+  <ul class="sidebar__list">
+    <li class="sidebar__list__item"><a class="text-dark" href="#"><i class="material-icons">assessment</i><span class="ml-3 font-weight-bold">Dashboard</span></a></li>
+    <li class="sidebar__list__item"><a class="text-dark" href="#"><i class="material-icons">question_answer</i><span class="ml-3 font-weight-bold">Question</span></a></li>
+    <li class="sidebar__list__item"><a class="text-dark active" href="/week5/dist/Assignment.html"><i class="material-icons">assignment</i><span class="ml-3 font-weight-bold">Assignment</span></a></li>
+    <li class="sidebar__list__item"><a class="text-dark" href="#"><i class="material-icons">video_library</i><span class="ml-3 font-weight-bold">Course</span></a></li>
+    <li class="sidebar__list__item"><a class="text-dark" href="/week5/dist/Admin.html"><i class="material-icons">supervisor_account</i><span class="ml-3 font-weight-bold">Admin</span></a></li>
+    <li class="sidebar__list__item"><a class="text-dark" href="#"><i class="material-icons">settings</i><span class="ml-3 font-weight-bold">Settings</span></a></li>
+  </ul>
+  <div class="mt-auto p-4 sidebar__user">
+    <div class="mr-3 user__img"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/andychen.jpeg?raw=true" class="rounded-circle"></div>
+    <div class="sidebar__user__info">
+      <div class="font-weight-bold sidebar__user__info__name">Andy Chen</div>
+      <div class="text-secondary sidebar__user__info__account">andy0401@mail.com</div>
+    </div>
+  </div>
+</aside>
+      <main class="container-fluid">
+        <nav class="topbar">
+          <h2 class="topbar__title">Assignment</h2>
+          <div class="dropdown" id="dropdown"><a class="dropdown__item" href="#" id="topbar__dropdown__btn"><span class="dropdown__item__text">All Courses</span><span class="dropdown__item__icon"><i class="material-icons">keyboard_arrow_down</i></span></a>
+            <div class="dropdown__menu--sm" id="topbar__dropdown">
+              <div class="dropdown__menu--sm__item" data-value="All Courses">All Courses</div>
+            </div>
+          </div><i class="ml-auto material-icons">search</i><i class="ml-4 material-icons">notifications_active</i>
+        </nav>
+        <section class="assignment">
+          <div class="dropdown"><a class="toggle__btn" href="#" id="assignment__list__btn"><span class="dropdown__item__text">All (4)</span><span class="dropdown__item__icon"><i class="material-icons">keyboard_arrow_down</i></span></a>
+            <div class="dropdown__menu" id="assignment__list">
+              <div class="dropdown__menu__item active">
+                <div class="dropdown__menu__item__tag">
+                  <div class="dropdown__menu__item__tag__assignment">Chapter Assignment 2</div>
+                  <div class="dropdown__menu__item__tag__time">4 hrs ago</div>
+                </div>
+                <div class="dropdown__menu__item__info">
+                  <div class="dropdown__menu__item__info__title">Please check this file…</div>
+                  <div class="text-secondary dropdown__menu__item__info__name">Emily Wang</div>
+                </div>
+              </div>
+              <div class="dropdown__menu__item">
+                <div class="dropdown__menu__item__tag">
+                  <div class="dropdown__menu__item__tag__assignment">Chapter Assignment 1</div>
+                  <div class="dropdown__menu__item__tag__time">12 hrs ago</div>
+                </div>
+                <div class="dropdown__menu__item__info">
+                  <div class="dropdown__menu__item__info__title">My Homework</div>
+                  <div class="text-secondary dropdown__menu__item__info__name">David Xu</div>
+                </div>
+              </div>
+              <div class="dropdown__menu__item">
+                <div class="dropdown__menu__item__tag">
+                  <div class="dropdown__menu__item__tag__assignment">Final Assignment</div>
+                  <div class="dropdown__menu__item__tag__time">18 hrs ago</div>
+                </div>
+                <div class="dropdown__menu__item__info">
+                  <div class="dropdown__menu__item__info__title">Have a problem with this…</div>
+                  <div class="text-secondary dropdown__menu__item__info__name">Tony Wei</div>
+                </div>
+              </div>
+              <div class="dropdown__menu__item">
+                <div class="dropdown__menu__item__tag">
+                  <div class="dropdown__menu__item__tag__assignment">Final Assignment</div>
+                  <div class="dropdown__menu__item__tag__time">19 hrs ago</div>
+                </div>
+                <div class="dropdown__menu__item__info">
+                  <div class="dropdown__menu__item__info__title">Did I do it right?</div>
+                  <div class="text-secondary dropdown__menu__item__info__name">Christina Lin</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="assignment__main">
+            <div class="comment__count">2 comments</div>
+            <div class="assignment__main__card">
+              <div class="bg-light assignment__main__card__title">
+                <div class="assignment__main__card__title__info">
+                  <div class="assignment__main__card__title__info__tag">Chapter Assignment 2 / HTML&CSS</div>
+                  <div class="assignment__main__card__title__info__subject">Please check this file for me, thanks!</div>
+                </div><a class="ml-auto text-dark more__btn" href="#"><i class="material-icons">more_vert</i></a>
+              </div>
+              <div class="assignment__main__list">
+                <div class="assignment__main__list__card">
+                  <div class="assignment__main__list__card__title">
+                    <div class="user__img"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/emilywang.jpeg?raw=true" class="rounded-circle"></div>
+                    <div class="ml-2 assignment__main__list__card__title">
+                      <div class="assignment__main__list__card__title__info">
+                        <div class="font-weight-bold assignment__main__list__card__title__info__name">Emily Wang</div>
+                        <div class="text-secondary assignment__main__list__card__title__info__time">10:38 AM (4 hours ago)</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="assignment__main__list__card__body">
+                    <div class="assignment__main__list__card__body__content">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <span class="highlight">div</span> is bigger than the height of the <span class="highlight">img</span>? There is a gap below the image, but it doesn’t seems to be a padding/margin. What is the gap or extra space below image?</div>
+                    <div class="assignment__main__list__card__body__attachments">
+                      <div class="assignment__main__list__card__body__attachments__item"><i class="material-icons">attach_file</i><span class="font-weight-bold assignment__main__card__list__item__body__attachments__item__filename">HW-2-David.zip</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="assignment__main__list__card">
+                  <div class="assignment__main__list__card__title">
+                    <div class="user__img"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/andychen.jpeg?raw=true" class="rounded-circle"></div>
+                    <div class="ml-2 assignment__main__list__card__title__info">
+                      <div class="font-weight-bold assignment__main__list__card__title__info__name">Andy Chen (You)</div>
+                      <div class="text-secondary assignment__main__list__card__title__info__time">13:24 AM (1 hours ago)</div>
+                    </div>
+                    <div class="ml-auto assignment__main__list__card__title__control"><a class="text-dark assignment__main__list__card__title__control__btn" href="#"><i class="material-icons">star_border</i></a><a class="text-dark assignment__main__list__card__title__control__btn" href="#"><i class="material-icons">edit</i></a></div>
+                  </div>
+                  <div class="assignment__main__list__card__body">
+                    <div class="assignment__main__list__card__body__content">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.<br>You can:<br>
+                      <ul>
+                        <li>• adjust the <span class="highlight">vertical-align</span>of the image to position it elsewhere (e.g. the <span class="highlight">middle</span>)</li>
+                        <li>• change the <span class="highlight">display</span> so it isn’t inline.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="richtext" id="richtext">
+                  <div class="bg-light richtext__control"><a class="richtext__control__btn" href="#"><span class="font-weight-bold">Body text</span><i class="material-icons">arrow_drop_down</i></a><a class="richtext__control__btn" href="#"><i class="material-icons">format_bold</i></a><a class="richtext__control__btn" href="#"><i class="material-icons">format_italic</i></a><a class="richtext__control__btn" href="#"><i class="material-icons">format_list_bulleted</i></a><a class="richtext__control__btn" href="#"><i class="material-icons">format_list_numbered</i></a><a class="richtext__control__btn" href="#"><i class="material-icons">insert_photo</i></a><a class="richtext__control__btn" href="#"><i class="material-icons">insert_link</i></a><a class="richtext__control__btn" href="#"><i class="material-icons">code</i></a></div>
+                  <textarea class="richtext__input" placeholder="Reply an answer…" rows="7"></textarea>
+                  <div class="d-flex justify-content-end richtext__btn">
+                    <button class="btn btn-outline-primary" id="richtext__cancel">Cancel</button>
+                    <button class="ml-2 btn btn-primary">Reply</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-2 d-flex align-items-center justify-content-between assignment__main__control"><a class="text-dark" href="#"><i class="material-icons">navigate_before</i></a><a class="ml-2 text-dark" href="#"><i class="material-icons">navigate_next</i></a>
+              <button class="ml-auto btn btn-outline-primary">Mark as read</button>
+              <button class="ml-2 btn btn-primary" id="reply">Reply</button>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="./js/index.bundle.js"></script>
+  </body>
+</html>
