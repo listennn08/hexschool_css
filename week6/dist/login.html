@@ -1,0 +1,97 @@
+<!DOCTYPE html><!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <title>Ｄ‘ＰＥＲＦＵＭＥ 香水專賣</title>
+    <link href="./css/index.css" rel="stylesheet">
+  </head>
+  <body>
+<header>
+  <nav class="navbar p-0">
+    <div class="container align-items-center justify-content-between"><a class="navbar-brand" href="/hexschool_css/week6/dist/">
+        <div class="logo nav__logo"></div></a>
+      <ul class="nav d-md-flex d-none">
+        <li class="nav-item"><a class="d-flex align-items-center text-secondary nav-link" href="/hexschool_css/week6/dist/product.html"><span class="material-icons">store</span><span>Product</span></a></li>
+        <li class="nav-item"><a class="d-flex align-items-center text-secondary nav-link login-nav" href="/hexschool_css/week6/dist/login.html"><span class="material-icons">person</span><span>Login</span></a><a class="d-none align-items-center text-secondary nav-link member-nav" href="/hexschool_css/week6/dist/member.html"><span class="material-icons">person</span><span>MyPage</span></a></li>
+        <li class="nav-item"><a class="d-flex align-items-center text-secondary nav-link" href="#"><span class="material-icons">favorite</span><span>Wishlist</span></a></li>
+        <li class="nav-item"><a class="d-flex align-items-center text-secondary nav-link" href="#"><span class="material-icons">shopping_cart</span><span>Cart(3)</span></a></li>
+      </ul>
+      <div class="d-md-none d-flex"><a class="position-relative d-flex align-items-center text-secondary nav-link" href="#"><span class="material-icons">shopping_cart</span>
+          <div class="position-absolute bg-primary rounded-circle text-light cart__number">3</div></a><a class="d-block text-secondary nav-link" href="#collapseExample" aria-controls="collapseExample" aria-expanded="false" data-toggle="collapse" id="collapseBtn" role="button"><span class="fz-md-4 material-icons">dehaze</span></a></div>
+    </div>
+    <div class="collapse w-100 text-center" id="collapseExample">
+      <ul class="list-group">
+        <li class="list-group-item bg-secondary border border-bottom-light"><a class="text-light" href="/hexschool_css/week6/dist/login.html">Product</a></li>
+        <li class="list-group-item bg-secondary border border-bottom-light"><a class="text-light" href="#">Wishlist</a></li>
+        <li class="list-group-item bg-secondary border border-bottom-light"><a class="text-light" href="#">Blog</a></li>
+        <li class="list-group-item bg-secondary border border-bottom-light"><a class="text-light" href="#">Contact</a></li>
+        <li class="list-group-item bg-secondary border border-bottom-light"><a class="text-light login-nav" href="/hexschool_css/week6/dist/login.html">log in</a><a class="text-light member-nav" href="/hexschool_css/week6/dist/login.html">MyPage</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<div class="navbar p-0 bg-primary d-md-block d-none">
+  <div class="container">
+    <ul class="nav">
+      <li class="nav-item"><a class="nav-link p-0 text-light py-2 pr-3" href="#">CHANEL</a></li>
+      <li class="nav-item"><a class="nav-link text-light" href="#">Jo Malone</a></li>
+      <li class="nav-item"><a class="nav-link text-light" href="#">Curology</a></li>
+      <li class="nav-item"><a class="nav-link text-light" href="#">Dior</a></li>
+      <li class="nav-item"><a class="nav-link text-light" href="#">Chloe</a></li>
+      <li class="nav-item"><a class="nav-link text-light" href="#">ZARA</a></li>
+    </ul>
+  </div>
+</div>
+    <div class="container py-5 mb-md-0 mb-3">
+      <div class="row py-md-5 pb-3">
+        <div class="col-md-8 mb-md-0 mb-4">
+          <div class="login__banner" style="background: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/login1.jpg?raw=true') no-repeat center center / cover"></div>
+        </div>
+        <div class="col-md-4 d-flex flex-column justify-content-center">
+          <div class="row pt-md-0 pt-1">
+            <div class="col">
+              <h3 class="h3 font-weight-bold">Log in</h3>
+              <form method="post">
+                <div class="form-group">
+                  <label for="account">帳號</label>
+                  <input class="form-control" id="account" name="account" placeholder="email@example.com" type="email" value="email@example.com">
+                </div>
+                <div class="form-group">
+                  <label for="pwd">密碼</label>
+                  <input class="form-control" id="pwd" name="pwd" placeholder="Password" type="password" value="12345">
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="row mb-md-0 mb-5">
+            <div class="col d-flex align-items-center justify-content-between"><a href="#">忘記密碼</a>
+              <button class="ml-auto btn btn-outline-primary">註冊</button>
+              <button class="ml-1 btn btn-primary" id="login">登入</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<footer class="footer bg-primary">
+  <div class="py-3 container">
+    <div class="row align-items-center justify-content-between">
+      <div class="col-md-2 col-5">
+        <div class="logo footer__logo"></div>
+      </div>
+      <div class="col-md-6 col-7 fz-sm-14">
+        <div class="text-light copyright">© 2020. All Rights Reserved.</div>
+      </div>
+      <div class="col-md-4 d-md-block d-none">
+        <ul class="nav ml-auto justify-content-end">
+          <li class="nav-item"><a class="nav-link text-light">Product</a></li>
+          <li class="nav-item"><a class="nav-link text-light">Blog</a></li>
+          <li class="nav-item"><a class="nav-link text-light">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+    <script src="./js/index.bundle.js"></script>
+  </body>
+</html>
