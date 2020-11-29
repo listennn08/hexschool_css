@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+html(lang="zh-tw")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Ｄ‘ＰＥＲＦＵＭＥ 香水專賣
+    link(rel="stylesheet", href="./css/index.css")
+  body
+    include components/nav
+    include components/category
+    .container.py-5.mb-md-0.mb-3
+      .row.py-md-5.pb-3
+        .col-md-8.mb-md-0.mb-4
+          .login__banner(style="background: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/login1.jpg?raw=true') no-repeat center center / cover")
+        .col-md-4.d-flex.flex-column.justify-content-center
+          .row.pt-md-0.pt-1
+            .col
+              h3.h3.font-weight-bold Log in
+              form(method="post")
+                .form-group
+                  label(for="account") 帳號
+                  input#account.form-control(type="email" name="account" placeholder="email@example.com" value="email@example.com")
+                .form-group
+                  label(for="pwd") 密碼
+                  input#pwd.form-control(type="password" name="pwd" placeholder="Password" value="12345")
+          .row.mb-md-0.mb-5
+            .col.d-flex.align-items-center.justify-content-between
+              a(href="#") 忘記密碼
+              button.ml-auto.btn.btn-outline-primary 註冊
+              button#login.ml-1.btn.btn-primary 登入
+    include components/footer
+    script(src="./js/index.bundle.js")

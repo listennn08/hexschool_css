@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+html(lang="zh-tw")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Ｄ‘ＰＥＲＦＵＭＥ 香水專賣
+    link(rel="stylesheet", href="./css/index.css")
+  body
+    include components/nav
+    include components/category
+    .container.py-5
+      .row.flex-md-row.flex-nowrap.flex-column.py-md-5
+        .col-md-2.member__nav
+          h5.h5.mb-md-4.d-md-block.d-none 會員中心
+          ul.d-md-block.d-flex.justify-content-between.pt-md-1.mb-md-0.mb-5
+            li.mb-md-4.member__nav__item.active
+              a.member__nav__item__link(href="#") 會員資料修改
+            li.mb-md-4.member__nav__item
+              a.member__nav__item__link(href="#") 訂單查詢
+            li.member__nav__item
+              a.member__nav__item__link(href="#") 退／換貨申請
+        .col-md-7.order-md-1.order-1
+          p.pb-1.border-bottom.border-dark 個人資料修改
+          form.member__main.pb-md-1.mb-5(method="post")
+            .form-group.row
+              label.col-md-2.col-form-label(for="account") 會員帳號
+              .col-md-8
+                input#account.form-control-plaintext.member__main(readonly value="email@example.com")
+            .form-group.row
+              label.col-md-2.col-form-label(for="name") 會員姓名
+              .col-md-8
+                input#name.form-control
+            .form-group.row
+              label.col-md-2.col-form-label(for="sex") 會員性別
+              .col-md-8
+                select#sex.form-control.col-md-2.member__main
+                  option.text-center(value="男") 男
+                  option.text-center(value="女" selected) 女
+            .form-group.row
+              label.col-md-2.col-form-label(for="email") 電子信箱
+              .col-md-8
+                input#email.form-control.member__main(value="email@example.com")
+            .form-group.row
+              label.col-md-2.col-form-label(for="cellphone") 手機號碼
+              .col-md-8
+                input#cellphone.form-control(type="tel")
+            .form-group
+              .row
+                label.col-md-2.col-form-label(for="contact-addr") 聯絡地址
+                .col-md-8
+                  .form-row.mb-2
+                    .col-6
+                      select#contact-addr.form-control.member__main
+                        option 台灣及離島
+                  .form-row.mb-2
+                    .col
+                      select.form-control.member__main
+                        option 高雄市
+                    .col
+                      select.form-control.member__main
+                        option 鹽埕區
+                  .form-row.mb-2
+                    .col
+                      input.form-control.member__main(type="text" placeholder="請輸入地址")
+                  .form-row
+                    .custom-control.custom-checkbox
+                      input#agree.custom-control-input(type="checkbox" checked)
+                      label.custom-control-label(for="agree") 我願意收到最新優惠情報
+            .form-group
+              .row
+                label.col-md-2.col-form-label(for="send-addr") 配送地址
+                .col-md-8
+                  .form-row.mb-2
+                    .col-6
+                      select#send-addr.form-control.member__main
+                        option 台灣及離島
+                  .form-row.mb-2
+                    .col
+                      select.form-control.member__main
+                        option 高雄市
+                    .col
+                      select.form-control.member__main
+                        option 鹽埕區
+                  .form-row.mb-2
+                    .col
+                      input.form-control.member__main(type="text" placeholder="請輸入地址")
+                  .form-row.mb-2
+                    .col-md-6
+                      button.col.btn.btn-primary.px-4(type="button") 確定修改
+          p.pb-1.border-bottom.border-dark 修改密碼
+          form.member__main(method="post")
+            .form-group.row
+              label.col-md-2.col-form-label(for="old-password") 舊密碼
+              .col-md-8
+                input#old-password.form-control(type="password")
+            .form-group.row
+              label.col-md-2.col-form-label(for="new-password") 新密碼
+              .col-md-8
+                input#new-password.form-control(type="password")
+            .form-group.row
+              label.col-md-2.col-form-label(for="check-password") 確認密碼
+              .col-md-8
+                .form-row.mb-2
+                  .col
+                    input#check-password.form-control(type="password")
+                .form-row.mb-2
+                  .col-md-6
+                    button.col.btn.btn-primary.px-4(type="button") 變更密碼
+        .col-md-3.order-md-2.order-0.mb-md-0.mb-5
+          .row.mb-md-4
+            .col.d-flex.align-items-center
+              i.material-icons person
+              span.pl-1.member__main 會員編碼
+              span.fz-20.pl-1.member__main T00020080615
+          .row.mb-md-2.member__main
+            .col-4 購物車
+            .col-8 56
+          .row.mb-md-2.member__main
+            .col-4 我的收藏
+            .col-8 23
+          .row.mb-md-2.member__main
+            .col-4 完成訂單
+            .col-8 8
+          .row.mb-md-2.member__main
+            .col-4 會員紅利
+            .col-8 2680
+          .row.member__main
+            .col-4 邀請碼
+            .col-8 TK2075
+          .row.fz-md-1.member__main__light
+            .col 新戶輸入邀請碼即可獲贈紅利點數1000點
+    include components/footer
+    script(src="./js/index.bundle.js")

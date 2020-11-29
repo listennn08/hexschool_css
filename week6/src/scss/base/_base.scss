@@ -1,0 +1,98 @@
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.logo {
+  width: 128px;
+  height: 38px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.nav__logo {
+  background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/d%E2%80%99Perfume%402x.png?raw=true");
+}
+
+.footer {
+
+  &__logo {
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/d%E2%80%99Perfumewhite%402x.png");
+  }
+}
+
+.banner {
+  background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index1.jpg?raw=true") no-repeat center center / cover fixed;
+  height: 870px;
+  margin-bottom: 60px;
+
+  @include pad {
+    height: 480px;
+  }
+}
+
+.main {
+  margin-bottom: 60px;
+}
+
+.footer__banner {
+  background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index10.jpg?raw=true") no-repeat center center / cover fixed;
+  height: 600px;
+}
+
+.member__nav {
+  color: #848484;
+  &__item {
+
+    &:hover, &.active {
+
+      .member__nav__item__link {
+        color: darken(#848484, 10%);
+        text-decoration: none;
+        border-bottom-color:  #916000;
+      }
+    }
+
+    &__link {
+      color: #848484;
+      border-bottom-width: 2px;
+      border-bottom-style: solid;
+      border-bottom-color: transparent;
+    }
+  }
+}
+
+.member__main {
+  color: #818A91;
+
+  &__light {
+    color: #A5A5A5;
+  }
+}
+
+.login__banner {
+  width: 730px;
+  max-width: 100%;
+  height: 730px;
+
+  @include mobile {
+    width: 345px;
+    height: 220px;
+  }
+}
+
+.text {
+  max-width: 350px;
+}
+
+.cart__number {
+  top: 16%;
+  right: 12%;
+  padding: 0 .34rem;
+  font-size: 12px;
+}

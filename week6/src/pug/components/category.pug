@@ -1,0 +1,10 @@
+.navbar.p-0.bg-primary.d-md-block.d-none
+  .container
+    ul.nav
+      each $item, $i in ['CHANEL', 'Jo Malone', 'Curology', 'Dior', 'Chloe', 'ZARA']
+        -if ($i == 0)
+          li.nav-item
+            a.nav-link.p-0.text-light.py-2.pr-3(href="#")=$item
+        -else
+          li.nav-item
+            a.nav-link.text-light(href="#")=$item

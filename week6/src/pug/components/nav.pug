@@ -1,0 +1,50 @@
+header
+  nav.navbar.p-0
+    .container.align-items-center.justify-content-between
+      a.navbar-brand(href="/hexschool_css/week6/dist/")
+        .logo.nav__logo
+      ul.nav.d-md-flex.d-none
+        li.nav-item
+          a.d-flex.align-items-center.text-secondary.nav-link(href="/hexschool_css/week6/dist/product.html")
+            span.material-icons store
+            span Product
+        li.nav-item
+          a.d-flex.align-items-center.text-secondary.nav-link.login-nav(href="/hexschool_css/week6/dist/login.html")
+            span.material-icons person
+            span Login
+          a.d-none.align-items-center.text-secondary.nav-link.member-nav(href="/hexschool_css/week6/dist/member.html")
+            span.material-icons person
+            span MyPage
+        li.nav-item
+          a.d-flex.align-items-center.text-secondary.nav-link(href="#")
+            span.material-icons favorite
+            span Wishlist
+        li.nav-item
+          a.d-flex.align-items-center.text-secondary.nav-link(href="#")
+            span.material-icons shopping_cart
+            span Cart(3)
+      .d-md-none.d-flex
+        a.position-relative.d-flex.align-items-center.text-secondary.nav-link(href="#")
+          span.material-icons shopping_cart
+          .position-absolute.bg-primary.rounded-circle.text-light.cart__number 3
+        a#collapseBtn.d-block.text-secondary.nav-link(
+          href="#collapseExample"
+          role="button"
+          data-toggle="collapse" 
+          aria-expanded="false"
+          aria-controls="collapseExample"
+        )
+          span.fz-md-4.material-icons dehaze
+    #collapseExample.collapse.w-100.text-center
+      ul.list-group
+        li.list-group-item.bg-secondary.border.border-bottom-light
+          a.text-light(href="/hexschool_css/week6/dist/login.html") Product
+        li.list-group-item.bg-secondary.border.border-bottom-light
+          a.text-light(href="#") Wishlist
+        li.list-group-item.bg-secondary.border.border-bottom-light
+          a.text-light(href="#") Blog
+        li.list-group-item.bg-secondary.border.border-bottom-light
+          a.text-light(href="#") Contact
+        li.list-group-item.bg-secondary.border.border-bottom-light
+          a.text-light.login-nav(href="/hexschool_css/week6/dist/login.html") log in
+          a.text-light.member-nav(href="/hexschool_css/week6/dist/login.html") MyPage

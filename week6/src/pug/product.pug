@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+html(lang="zh-tw")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Ｄ‘ＰＥＲＦＵＭＥ 香水專賣
+    link(rel="stylesheet", href="./css/index.css")
+  body
+    include components/nav
+    include components/category
+    .container.py-5
+      ul.row.py-md-5.flex-wrap
+        -for(let i = 1 ; i <= 12; i++)
+          li.col-md-3.col-6.mb-5
+            a.d-block(href="/hexschool_css/week6/dist/product-detail.html")
+              div(class=`shop__product__img__${i}` style=`background-image: url('./assets/product${i}.jpg');`)
+            div
+              h4.h4.fz-sm-20 Poppy & Barley
+              .font-weight-light
+                p.m-0 Jo Malone
+                p.m-0 NT$1,380
+                  span.text-secondary
+                    del NT$1,580
+                a#favorite.mr-2(href="#" role="button" data-toggle="modal" data-target="#productModal"): i.material-icons favorite
+                a#addCart(href="#" role="button" data-toggle="modal" data-target="#productModal"): i.material-icons shopping_cart
+      ul.d-flex.align-items-center.justify-content-center
+        -for(let i = 1; i < 4 ;i++)
+          -if (i == 1)
+            li.pagination.active
+              a.pagination__item(href="#")=i
+          -else
+            li.pagination
+              a.pagination__item(href="#")=i
+    include components/modal
+    include components/subcribe
+    include components/footer
+    script(src="./js/index.bundle.js")
