@@ -1,0 +1,104 @@
+@mixin pad {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: 414px) {
+    @content;
+  }
+}
+
+$util-config: (
+  "fz": "font-size"
+);
+
+
+
+@each $property, $proeprty-value in $util-config {
+  @for $val  from 1 through 10 {
+    .#{$property}-md-#{$val} {
+      #{$proeprty-value}: $val * .5rem;
+    }
+
+    .#{$property}-sm-#{$val} {
+      @include mobile {
+        #{$proeprty-value}: $val * .5rem;
+
+      }
+    }
+  }
+}
+
+
+$titleText: (
+  "slogan": (
+    "title": (
+      font-size: 96px,
+      line-height: 128px,
+    ),
+    "subtitle": (
+      font-size: 72px,
+    ),
+    "48": (
+      font-size: 48px,
+    ),
+    "48z":(
+      font-size: 48px,
+      line-height: 64px,
+      text-align: center
+    ),
+    "img": (
+      "w": 960px,
+      "h": 960px
+    )
+  ),
+  "list": (
+    "title": (
+      font-size: 24px,
+      line-height: 31px,
+    ),
+    "img": (
+      "w": 450px,
+      "h": 600px
+    )
+  )
+);
+
+@mixin baseTitleText {
+  font-family: 'Merriweather';
+  font-weight: bolder;
+  font-style: italic;
+}
+
+@mixin generateImgSize($prefix, $w, $h) {
+  .#{$prefix}-img {
+    display: block;
+    width: $w;
+    height: $h;
+  }
+}
+
+@each $prefix, $property in $titleText {
+  $keys: map-keys($property);
+  
+  @each $key in $keys {
+    @if ($key == 'img') {
+      $img: map-get($property, $key);
+      @include generateImgSize($prefix, map-get($img, 'w'), map-get($img, 'h'));
+    } @else {
+      $class: map-get($property, $key);
+      .#{$prefix}-#{$key} {
+        @include baseTitleText;
+        @each $class-property, $class-propertyVal in $class {
+          #{$class-property}: #{$class-propertyVal};
+        }
+      }
+      .#{$prefix}-width {
+        width: map-get(map-get($property, 'img'), 'w');
+      }
+    }
+  } 
+}
+

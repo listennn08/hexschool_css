@@ -1,0 +1,47 @@
+body {
+  font-family: 'Lato', sans-serif;
+  overflow-x: hidden;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.font-Merroweather {
+  font-family: 'Merriweather';
+}
+
+.banner {
+  height: 640px;
+}
+.copy-reserved {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.slogan {
+  width: 960px;
+  height: 984px;
+}
+.h-864 {
+  height: 864px;
+}
+.w-570 {
+  width: 570px;
+}
+
+.control {
+  .material-icons {
+    font-size: 48px;
+  }
+}
+
+.readmore {
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  transform: translate(-76%, -50%);
+
+  .material-icons {
+    font-size: 16px;
+  }
+}

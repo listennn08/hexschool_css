@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Fixie Bicycle
+  body
+    include components/navbar
+    .container
+      .row.flex-nowrap
+        .col-6.d-flex.flex-column.justify-content-center
+          .row
+            h2.mb-5.slogan-title(
+              data-aos="fade-right"
+              data-aos-duration="800"
+            ) Single Speed, Single Life.
+            .col-10.mb-5.pl-0(
+              data-aos="fade-right"
+              data-aos-duration="800"
+              data-aos-delay="400"
+            )
+              p.h4.text-secondary.w-570 More recently the “fixie” has become a popular alternative among mainly urban cyclists, offering the advantage of simplicity compared with the standard multi-geared bicycle.
+            a.col-4.py-3.btn.btn-light.fz-md-3.border.border-dark.rounded-0(
+              href="#"
+              data-aos="fade-right"
+              data-aos-duration="800"
+              data-aos-delay="800"
+            ) Shop Now
+        .slogan(
+          data-aos="fade-left"
+          data-aos-duration="800"
+        )
+          div.slogan-width.h-864(style="background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week7/img1.jpg') no-repeat center center / cover")
+          .row.w-100.no-gutters
+            .col-2.border.d-flex.align-items-center.justify-content-center.control.py-3
+              a.d-block.py-3(href="#")
+                i.material-icons keyboard_arrow_left
+            .col-2.border.d-flex.align-items-center.justify-content-center.control.py-3
+              a.d-block.py-3(href="#")
+                i.material-icons keyboard_arrow_right
+            .col-8.border.d-flex.align-items-center.px-5
+              h4.m-0.slogan-48 Collection 001-xx
+    #second.row.flex-nowrap.no-gutters.position-relative
+      .slogan-img(
+        data-aos="fade-right"
+        data-aos-duration="800"
+      )
+        div.slogan-img(style="background: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/week7/img2.jpg?raw=true') no-repeat left 50% center / cover")
+      a.position-absolute.readmore.d-flex.align-items-center.bg-dark.text-decoration-none(href="#")
+        .p-3.bg-light.h4.m-0 Read More
+        .p-3.text-light.d-flex.align-items-center
+          i.material-icons arrow_forward
+      .col-6.bg-light.py-5
+        .py-5.w-75.mx-auto.h-100.d-flex.flex-column.justify-content-between
+          .align-self-around(
+            data-aos="fade-left"
+            data-aos-duration="800"
+          )
+            p.w-570.text-secondary A fixed gear drivetrain is more mechanically efficient than any other bicycle drivetrain, with the most direct power transfer from rider to the wheels. Thus, it requires less energy in any given gear to move than a geared bike in the same gear.
+          .align-self-end.text-right.pb-5(
+            data-aos="fade-left"
+            data-aos-duration="800"
+          )
+            h3.slogan-subtitle.mb-4 One Gear,
+            h3.slogan-subtitle.mb-5 Many Variations
+    #third.row.flex-nowrap.no-gutters.position-relative
+      .col-6.bg-light.py-5
+        .py-5.w-75.mx-auto.h-100.d-flex.flex-column-reverse.justify-content-between
+          .align-self-end(
+            data-aos="fade-right"
+            data-aos-duration="800"
+          )
+            p.m-0.w-570.text-secondary Without the added parts required for a fully geared drive train—derailleurs, shifters, cables, cable carriers, multiple chain rings, freewheel hub, brazed-on mounting lugs—a fixed gear bicycle weighs less than its geared equivalent.
+          .pt-5(
+            data-aos="fade-right"
+            data-aos-duration="800"
+          )
+            h3.slogan-subtitle.mt-5.mb-4 Stripped-Down
+            h3.slogan-subtitle Performance
+      a.position-absolute.readmore.d-flex.align-items-center.bg-light.text-decoration-none(href="#")
+        .p-3.bg-dark.text-light.h4.m-0 Read More
+        .p-3.d-flex.align-items-center
+          i.material-icons arrow_forward
+      .slogan-img
+        div.slogan-img(style="background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week7/img3.jpg') no-repeat right 50% center / cover")
+    .container.d-flex.flex-column.justify-content-center.align-items-center.py-5
+      .w-570
+        h4.slogan-48z.py-5.mb-4(
+          data-aos="fade-up"
+          data-aos-duration="400"
+        ) A collection built for regular commuters
+        p.text-secondary(
+          data-aos="fade-up"
+          data-aos-duration="400"
+          data-aos-delay="200"
+        ) Riders unknown to each other commonly greet each other when on bikes. As in many subcultures, this feeling of belonging is a key factor in recruiting and retaining participants.
+    #fourth.banner.d-flex.flex-column-reverse(
+      style="background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week7/img4.jpg') no-repeat top 20% center / cover"
+      data-aos="fade-up"
+      data-aos-duration="800"
+    )
+      .container.py-5(
+        data-aos="fade-up"
+        data-aos-duration="800"
+      )
+        p.p-2.fz-md-3.bg-light.list-width
+          span.font-Merroweather.font-italic.font-weight-bolder “I like to ride. Fixed gear. No brakes. Can’t stop. Don’t want to, either.”
+          br
+          span.fz-md-2.text-secondary
+            span.font-italic Premium Rush
+            span (2012)
+    .container.py-5.my-4
+      ul.list-unstyled.d-flex.justify-content-between.py-2
+        -for (let i = 5 ; i < 8; i++)
+          li(
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay=`${(i-5) * 400}`
+          )
+            -if (i == 5)
+              .mb-3.list-img(style=`background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week7/img${i}.jpg') no-repeat right center / cover`)
+              .mb-2.list-title All who cycle are my friends
+              .list-width
+                p.text-secondary 2020.4.27
+                p.text-secondary A rider from Stockholm interviewed for an article about the phenomenon notes that riding a bike imparts a feeling of freedom to the rider…
+            -else if(i == 6)
+              .mb-3.list-img(style=`background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week7/img${i}.jpg') no-repeat center bottom / cover`)
+              .mb-2.main-list-title The Australian fixie culture
+              .list-width
+                p.text-secondary 2020.3.11
+                p.text-secondary There are also several bicycle clubs throughout Sweden with a fixed-gear niche. Komet Club Rouler is a club based in Gothenburg, annually arranging Svart Kat…
+            -else
+              .mb-3.list-img(style=`background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week7/img${i}.jpg') no-repeat center center / cover`)
+              .mb-2.main-list-title All who cycle are my friends
+              .list-width
+                p.text-secondary 2020.2.29
+                p.text-secondary Online stores in Australia ship partially-assembled bikes directly to consumers, considerably undercutting prices at typical brick and mortar stores…
+    include components/footer

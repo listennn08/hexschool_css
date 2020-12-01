@@ -1,0 +1,11 @@
+@import 'node_modules/bootstrap/scss/functions';
+@import './base/variables';
+@import 'node_modules/bootstrap/scss/mixins';
+@import 'bootstrap';
+
+@import 'node_modules/aos/src/sass/aos';
+
+@import './utilities/mixins';
+
+@import './base/fontStyle';
+@import './base/base';
