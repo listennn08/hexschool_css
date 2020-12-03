@@ -24,10 +24,9 @@ window.onscroll = function() {
   ) {
     const move = (second.offsetTop - doc.scrollTop) * 0.1;
     if (move > -50) {
-      secondBackground.style = 
-        `background: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/week7/img2.jpg?raw=true') no-repeat left ${50+move}% center / cover`;
-      secondSubtitle_1.style = `transform: translateX(${move}px;)`;
-      secondSubtitle_2.style = `transform: translateX(${Math.abs(move)}px;)`;
+      secondBackground.style = `background-position: left ${50+move}% center`;
+      secondSubtitle_1.style.transform = `translateX(${move}px;);`;
+      secondSubtitle_2.style.transform = `translateX(${Math.abs(move)}px;);`;
     }
   } else if (
     doc.scrollTop >= third.offsetTop
@@ -35,7 +34,7 @@ window.onscroll = function() {
   ) {
     const move = (third.offsetTop - doc.scrollTop) * 0.1;
     if (move > -50) {
-      thirdBackground.style = `background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week7/img3.jpg') no-repeat right ${50 + move}% center / cover`;
+      thirdBackground.style = `background-position: right ${50 + move}% center`;
       thirdSubtitle_1.style = `transform: translateX(${move}px);`;
       thirdSubtitle_2.style = `transform: translateX(${Math.abs(move)}px);`;
     }
@@ -45,7 +44,7 @@ window.onscroll = function() {
   ) {
     const move = (fourth.offsetTop - doc.scrollTop) * 0.05;
     if (move > -30) {
-      fourth.style = `background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week7/img4.jpg') no-repeat top ${20 + move}% center / cover`;
+      fourth.style = `background-position: top ${20 + move}% center`;
     }
   }
 }

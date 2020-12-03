@@ -22,6 +22,36 @@ body {
   width: 960px;
   height: 984px;
 }
+
+.img {
+  &-1 {
+    background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week7/img1.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  &-2 {
+    background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/week7/img2.jpg?raw=true');
+    background-repeat: no-repeat;
+    background-position: left 50% center;
+    background-size: cover;
+  }
+
+  &-3 {
+    background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week7/img3.jpg');
+    background-repeat: no-repeat;
+    background-position: right 50% center;
+    background-size: cover;
+  }
+
+  &-4 {
+    background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week7/img4.jpg');
+    background-repeat: no-repeat;
+    background-position: top 20% center;
+    background-size: cover;
+  }
+}
 .h-864 {
   height: 864px;
 }
